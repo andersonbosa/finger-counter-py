@@ -12,6 +12,7 @@ cap.set(4, hCam)
 
 folderPath = "fingers" # name of the folder, where there are images of fingers
 fingerList = os.listdir(folderPath) # list of image titles in 'fingers' folder
+
 overlayList = []
 for imgPath in fingerList:
     image = cv2.imread(f'{folderPath}/{imgPath}')
